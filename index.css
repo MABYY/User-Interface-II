@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -52,119 +52,200 @@ table {
 
 /* Project 4 Starts here */
 * {
-    font-size: 62.5%;
-    /* box-sizing: border-box; */
-    font-family: 'Lucida Console', monospace;
-	color: grey;
 	box-sizing: border-box;
-	/* background-color:#fefbd8; */
+	border: 1px solid grey;
+	}
+
+html{
+	font-size: 62.5%;
+	font-family: 'Lucida Console', monospace;
 }
 
-
-header{
-	/* text-align: left; */
-	font-size: 3rem;
-	border: 1% solid black;
-	margin: 1%;
-	padding: 1%;
+body{
+	line-height: 1.5;
+	font-size:1.8rem;
+	color: #4F4f4f;
 	width: 100%;
-	margin: 2% 1%;
+}
+
+h1 h2 h3 {
+	letter-spacing: 1%;
+	text-align: center;
+}
+h1{
+	font-size:5rem;
+}
+
+h2{
+	font-size:4rem;
+	text-align: center;
+}
+
+h3{
+	font-size:2.5rem;
+}
+header{
+	border: 2px solid green;
+	box-sizing: border-box;
 }
 
 .nav_bar{
 	/* display: flex; */
-	border: 2px solid black;
-    margin: 2% 1%;
+	/* border: 2px solid red; */
+    margin: 2%;
     padding: 10%;
-    width: 100%;
 	background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1160&q=80");
 
 }
 
+
 a {
 	padding: 1%;
+	margin: 2% 0%;
 	text-decoration: none;
 	background-color: #f4511e;
 	color: white;
-	text-align: center;
 	opacity: 0.6;
-	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 20%;
 }
 
 a:hover {
 	opacity: 1
 }
 
-.myname-bar{
-	/* border: 2px solid black; */
-	margin: 2% 1%;
-	padding: 2%;
 
-}
-
-.projects-bar{
-	/* border: 2px solid black; */
-	margin: 2% 1%;
-	padding: 2%;
-}
 
 .flex-container{
-	/* border: 2px solid red; */
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-around;
-	padding-top: 5%;
-
+	border: 3px solid red;
+	margin: 3%;
+	box-sizing: border-box;
 }
 
-
-h4 {
-	font-size: 3rem;
-}
-
-p{
-	margin-left: auto;
-   margin-right: auto;
-   width: 14em
-}
-
-#p-bis{
-	font-size: 2rem;
-}
-.about-me{
-	font-size: 1.5rem;
-	/* border: 2px solid black; */
-	text-align: center;
-	margin-left: auto;
-   margin-right: auto;
-   padding-top: 2%
-}
-
-.nameofProject{
-	/* border: 2px solid black; */
-	font-size: 1rem;
-	margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   font-weight: bold;
-
-}
-
-/* .flex-container2{
-	border: 2px solid red;
+ .aboutme{
+	width: 30%;
 	display: flex;
-	padding-top: 1%;
-} */
+	flex-direction: column;
+	justify-content: space-around;
+	/* border-color: red; */
+}
+
+.aboutme-click{
+	text-align: center;
+}
+
+.aboutme-click > a{
+	padding: 5%;
+	text-align: center;
+}
+
+p {
+	 text-align: center;
+	 text-justify: inter-word;
+}
+.projects {
+	border: 3px solid green;
+}
+
 
 .nav_bar_footer{
-	/* border: 2px solid black; */
-    margin: 0% 1%;
-    padding: 2% 1%;
-    width: 100%;
+    padding: 2%;
 	background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1160&q=80");
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+}
+/*  *//*  *//*  *//*  *//*  *//*  */
+/* Media Queries */
+/*  *//*  *//*  *//*  *//*  *//*  */
+
+@media(max-width:800px){
+	.nav_bar{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1{
+		text-align: center;
+	}
+
+
+	.vertical-menu{
+		margin: 10% 25%;
+	}
+	.vertical-menu a{
+		 display: block;
+		 padding: 5%;
+		 margin: 1%;
+	}
+
+	.flex-container{
+		display: block;
+		border: 3px solid red;
+		margin: 3%;
+		box-sizing: border-box;
+	}
+
+	.main-pic{
+		display: flex;
+		justify-content: center;
+		margin: 2%;
+	}
+	.aboutme{
+		display: block;
+		border: 3px solid blue;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.aboutme-click{
+		margin: 5%;
+	}
+
+	.projects{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+
+@media(max-width:500px){
+	.aboutme{
+		display: block;
+		border: 3px solid blue;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+@media(max-width:360px){
+
+.projects{
+	box-sizing: border-box;
+}
+	.aboutme-bar{
+		box-sizing: border-box;
+	}
+	.flex-container{
+		display: block;
+		border: 3px solid red;
+		margin: 3%;
+
+	}
+	.main-pic{
+		display: flex;
+		justify-content: center;
+		margin: 2%;
+	}
+	.main-pic img{
+	width: 100%;
+}
+	.projects > flex-container{
+		width: 50%;
+	}
+	.flex-container img {
+		width: 100%;
+	}
 }
