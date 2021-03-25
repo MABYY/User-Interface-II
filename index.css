@@ -53,7 +53,6 @@ table {
 /* Project 4 Starts here */
 * {
 	box-sizing: border-box;
-	border: 1px solid grey;
 	}
 
 html{
@@ -85,13 +84,10 @@ h3{
 	font-size:2.5rem;
 }
 header{
-	border: 2px solid green;
 	box-sizing: border-box;
 }
 
 .nav_bar{
-	/* display: flex; */
-	/* border: 2px solid red; */
     margin: 2%;
     padding: 10%;
 	background-image: url("https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1160&q=80");
@@ -118,7 +114,6 @@ a:hover {
 .flex-container{
 	display: flex;
 	justify-content: space-around;
-	border: 3px solid red;
 	margin: 3%;
 	box-sizing: border-box;
 }
@@ -128,7 +123,6 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* border-color: red; */
 }
 
 .aboutme-click{
@@ -145,7 +139,6 @@ p {
 	 text-justify: inter-word;
 }
 .projects {
-	border: 3px solid green;
 }
 
 
@@ -182,7 +175,7 @@ p {
 
 	.flex-container{
 		display: block;
-		border: 3px solid red;
+
 		margin: 3%;
 		box-sizing: border-box;
 	}
@@ -194,7 +187,7 @@ p {
 	}
 	.aboutme{
 		display: block;
-		border: 3px solid blue;
+
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -213,7 +206,6 @@ p {
 @media(max-width:500px){
 	.aboutme{
 		display: block;
-		border: 3px solid blue;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -230,7 +222,6 @@ p {
 	}
 	.flex-container{
 		display: block;
-		border: 3px solid red;
 		margin: 3%;
 
 	}
